@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+       
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #050210;
+        }
+        .loader{
+            position: relative;
+            overflow: hidden;
+            box-shadow: 20px 20px 100px #fb5dad,
+                        -20px 20px 100px #55fb9f,
+                        20px -20px 100px #b97aff,   
+                        -20px -20px 100px #fb5dad;            
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            animation: loader 1s linear infinite;
+        }
+        .loader:before{
+            
+            background: radial-gradient(#171726 0%,#010113 0%);
+            animation: gradient 1s linear infinite;
+            position:absolute;
+            content: '';
+            z-index: 10;
+            opacity: 10;
+            top: 25px;
+            left: 25px;
+            right: 25px;
+            bottom: 25px;
+            background-color: #010113;
+            border-radius: 50%;
+            box-shadow: -5px -5px -5px rgba(255, 255, 255, 0.1),
+            10px 10px 10px rgba(0, 0, 0, 0.4),
+            inset -5px -5px -5px rgba(255, 255, 255, 0.2),
+            inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+            filter: blur(4px);
+
+        }
+        .loader span{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            filter: blur(20px);
+            
+            border-radius: 50%;
+            background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+            
+            animation: loader 1s linear infinite;
+
+            
+        }
+
+        
+        @keyframes loader {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes gradient{
+            0%{
+                background: radial-gradient(#171726 0%,#010113 1%);
+            }3%{
+                background: radial-gradient(#171726 0%,#010113 3%);
+            }6%{
+                background: radial-gradient(#171726 0%,#010113 6%);
+            }9%{
+                background: radial-gradient(#171726 0%,#010113 9%);
+            }12%{
+                background: radial-gradient(#171726 0%,#010113 12%);
+            }15%{
+                background: radial-gradient(#171726 0%,#010113 15%);
+            }18%{
+                background: radial-gradient(#171726 0%,#010113 18%);
+            }21%{
+                background: radial-gradient(#171726 0%,#010113 21%);
+            }24%{
+                background: radial-gradient(#171726 0%,#010113 24%);
+            }27%{
+                background: radial-gradient(#171726 0%,#010113 27%);
+            }30%{
+                background: radial-gradient(#171726 0%,#010113 30%);
+            }33%{
+                background: radial-gradient(#171726 0%,#010113 33%);
+            }36%{
+                background: radial-gradient(#171726 0%,#010113 36%);        
+            }39%{
+                background: radial-gradient(#171726 0%,#010113 39%);
+            }42%{
+                background: radial-gradient(#171726 0%,#010113 42%);
+            }45%{
+                background: radial-gradient(#171726 0%,#010113 45%);    
+            }48%{
+                background: radial-gradient(#171726 0%,#010113 48%);
+            }51%{
+                background: radial-gradient(#171726 0%,#010113 51%);
+            }54%{
+                background: radial-gradient(#171726 0%,#010113 54%);
+            }57%{
+                background: radial-gradient(#171726 0%,#010113 57%);
+            }60%{   
+                background: radial-gradient(#171726 0%,#010113 60%);
+            }63%{
+                background: radial-gradient(#171726 0%,#010113 63%);
+            }66%{
+                background: radial-gradient(#171726 0%,#010113 66%);
+            }69%{
+                background: radial-gradient(#171726 0%,#010113 69%);   
+            }72%{
+                background: radial-gradient(#171726 0%,#010113 72%);
+            }75%{
+                background: radial-gradient(#171726 0%,#010113 75%);
+            }78%{
+                background: radial-gradient(#171726 0%,#010113 78%);
+            }81%{
+                background: radial-gradient(#171726 0%,#010113 81%);
+            }84%{
+                background: radial-gradient(#171726 0%,#010113 84%);
+            }87%{
+                background: radial-gradient(#171726 0%,#010113 87%);
+            }90%{
+                background: radial-gradient(#171726 0%,#010113 90%);
+            }93%{
+                background: radial-gradient(#171726 0%,#010113 93%);
+            }96%{
+                background: radial-gradient(#171726 0%,#010113 96%);
+            }99%{
+                background: radial-gradient(#171726 0%,#010113 99%);
+            }
+        }
+
+                
+    </style>
+</head>
+<body>
+    
+    <div class="loader">
+        
+        <span></span>
+        
+        
+    </div>
+    
+</body>
+</html>
